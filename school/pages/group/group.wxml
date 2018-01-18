@@ -1,0 +1,4 @@
+<!--pages/group/group.wxml-->
+<view class="container">
+    <text>小组</text>
+</view>

@@ -1,0 +1,4 @@
+<!--pages/broadcast/broadcast.wxml-->
+<view class="container">
+    <text>广播</text>
+</view>
