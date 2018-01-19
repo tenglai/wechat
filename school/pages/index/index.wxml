@@ -1,4 +1,9 @@
 <!--index.wxml-->
-<view class="container">
-    <text>首页</text>
-</view>
+<view class="menu-wrp">  
+  <!--设定一个item项后，遍历输出-->  
+  <view class="menu-list" wx:for="{{menu.imgUrls}}" wx:key="id">  
+    <image class="menu-img" src="{{item}}" />  
+    <view class="menu-desc">{{menu.descs[index]}}</view>  
+  </view>  
+</view>  
+<view class="gap-1"></view>  
