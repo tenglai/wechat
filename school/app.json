@@ -4,7 +4,8 @@
     "pages/audiobook/audiobook",
     "pages/broadcast/broadcast",
     "pages/group/group",
-    "pages/mine/mine"
+    "pages/mine/mine",
+    "component/stepper/stepper"
   ],
   "window": {
     "backgroundTextStyle": "light",
