@@ -33,7 +33,21 @@ Page({
         '到家',
         '分类'
       ]
-    }
+    },
+    movies: [
+      {
+        linkUrl: '/pages/index/index',
+        picUrl: 'http://img02.tooopen.com/images/20150928/tooopen_sy_143912755726.jpg'
+      }, {
+        linkUrl: '/pages/logs/logs',
+        picUrl: 'http://img06.tooopen.com/images/20160818/tooopen_sy_175866434296.jpg'
+      }, {
+        linkUrl: '/pages/test/test',
+        picUrl: 'http://img06.tooopen.com/images/20160818/tooopen_sy_175833047715.jpg'
+      }
+    ],
+    slider: [],
+    swiperCurrent: 0
   },
 
   /**
@@ -41,5 +55,19 @@ Page({
    */
   onLoad: function (options) {
 
+  },
+
+  //轮播图的切换事件  
+  swiperChange: function (e) {
+    //只要把切换后当前的index传给<swiper>组件的current属性即可  
+    this.setData({
+      swiperCurrent: e.detail.current
+    })
+  },
+  //点击指示点切换  
+  chuangEvent: function (e) {
+    this.setData({
+      swiperCurrent: e.currentTarget.id
+    })
   }
 })
