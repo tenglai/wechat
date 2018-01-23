@@ -34,22 +34,15 @@ Page({
         '分类'
       ]
     },
-    movies: [
-      {
-        linkUrl: '/pages/index/index',
-        picUrl: 'http://img02.tooopen.com/images/20150928/tooopen_sy_143912755726.jpg'
-      }, {
-        linkUrl: '/pages/logs/logs',
-        picUrl: 'http://img06.tooopen.com/images/20160818/tooopen_sy_175866434296.jpg'
-      }, {
-        linkUrl: '/pages/test/test',
-        picUrl: 'http://img06.tooopen.com/images/20160818/tooopen_sy_175833047715.jpg'
-      }
+    /*自定义轮播图 配置*/
+    slider: [
+      { id: '0', linkUrl: 'pages/index/index', picUrl: 'http://img02.tooopen.com/images/20150928/tooopen_sy_143912755726.jpg' },
+      { id: '0', linkUrl: 'pages/index/index', picUrl: 'http://img06.tooopen.com/images/20160818/tooopen_sy_175866434296.jpg' },
+      { id: '0', linkUrl: 'pages/index/index', picUrl: 'http://img06.tooopen.com/images/20160818/tooopen_sy_175833047715.jpg' }
     ],
-    slider: [],
     swiperCurrent: 0,
     /*模态框*/
-    is_modal_Hidden: false,
+    is_modal_Hidden: true,
     is_modal_Msg: '我是一个自定义组件'
   },
 

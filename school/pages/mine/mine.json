@@ -1,1 +1,5 @@
-{}
+{
+  "usingComponents": {
+    "stepper": "../../component/stepper/stepper"
+  }
+}

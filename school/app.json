@@ -5,7 +5,8 @@
     "pages/broadcast/broadcast",
     "pages/group/group",
     "pages/mine/mine",
-    "component/modal/modal"
+    "component/modal/modal",
+    "component/stepper/stepper"
   ],
   "window": {
     "backgroundTextStyle": "light",
