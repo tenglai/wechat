@@ -47,7 +47,10 @@ Page({
       }
     ],
     slider: [],
-    swiperCurrent: 0
+    swiperCurrent: 0,
+    /*模态框*/
+    is_modal_Hidden: false,
+    is_modal_Msg: '我是一个自定义组件'
   },
 
   /**
@@ -64,10 +67,18 @@ Page({
       swiperCurrent: e.detail.current
     })
   },
+
   //点击指示点切换  
   chuangEvent: function (e) {
     this.setData({
       swiperCurrent: e.currentTarget.id
+    })
+  },
+
+  // 显示模态框
+  showModal: function() {
+    this.setData({
+      is_modal_Hidden: false
     })
   }
 })

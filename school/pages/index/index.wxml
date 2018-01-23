@@ -9,9 +9,11 @@
     </block>    
   </swiper>
   <!-- 分类入口 设定一个item项后，遍历输出 -->  
-  <view class="menu-list" wx:for="{{menu.imgUrls}}" wx:key="id">  
+  <view class="menu-list" wx:for="{{menu.imgUrls}}" wx:key="id" bindtap="showModal">  
     <image class="menu-img" src="{{item}}" />  
     <view class="menu-desc">{{menu.descs[index]}}</view>  
-  </view>  
+  </view>
+  <!-- 调用modal组件 --> 
+  <modal modal-hidden="{{is_modal_Hidden}}" modal-msg="{{is_modal_Msg}}"/>
 </view>  
 <view class="gap-1"></view>  
