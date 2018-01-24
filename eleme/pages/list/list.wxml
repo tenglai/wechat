@@ -1,0 +1,4 @@
+<!--pages/list/list.wxml-->
+<view>
+  <text>列表页</text>
+</view>
