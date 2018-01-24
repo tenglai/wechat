@@ -21,6 +21,6 @@
     <view class="menu-desc">{{menu.descs[index]}}</view>  
   </view>
   <!-- 调用modal组件 --> 
-  <modal modal-hidden="{{is_modal_Hidden}}" modal-msg="{{is_modal_Msg}}"/>
+  <!-- <modal modal-hidden="{{is_modal_Hidden}}" modal-msg="{{is_modal_Msg}}"/> -->
 </view>  
 <view class="gap-1"></view>  
