@@ -1,0 +1,45 @@
+/* pages/board/board.wxss */
+.slide swiper {
+  height: 400rpx;
+}
+.slide-image {
+  width: 100%;
+  height: 100%;
+}
+.title-wrap {
+  margin-top: 30rpx;
+  padding-left: 70rpx;
+}
+.title-wrap .title{
+  display: block;
+  font-size: 50rpx;
+}
+.title-wrap .desc {
+  margin-top: 20rpx;
+  display: block;
+  font-size: 30rpx;
+  color: #808080;
+}
+.board {
+  display: flex;
+  flex-direction: column;
+  padding: 30rpx;
+}
+.board .board-item {
+  flex: 1;
+  border: 1rpx solid #eee;
+  margin-top: 20rpx;
+  padding: 30rpx;
+  display: flex;
+  background-color: #fff8dc;
+  /*移动端展示：元素点击时高亮*/
+  cursor: pointer;
+}
+.board text {
+  flex: 1;
+  font-size: 30rpx;
+}
+.board image {
+  width: 40rpx;
+  height: 40rpx;
+}

@@ -1,0 +1,49 @@
+<!--pages/board/board.wxml-->
+<view>
+  <!-- 轮播图 -->
+  <view class='slide'>
+    <swiper indicator-dots='true' autoplay='true' interval='8000' duration='1000'>
+      <block wx:for="{{imgWrap}}" wx:key="id">
+        <swiper-item>
+          <image src='{{item.images.large}}' class='slide-image' width="355" height="150" mode='aspectFill'/>
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+  <!-- 标题 -->
+  <view class='title-wrap'>
+    <text class='title'>豆瓣电影榜单集合</text>
+    <text class='desc'>最新,最IN的影视信息收集~</text>
+  </view>
+  <!-- 榜单部分 -->
+  <view class='board'>
+    <!-- 正在热映 -->
+    <navigator url='../list/list?type=in_theaters&title=正在热映' hover-class='none'>
+      <view class='board-item'>
+        <text>正在热映</text>
+        <image src='../../images/arrowright.png' mode='aspectFill'></image>
+      </view>
+    </navigator>
+    <!-- 即将热映 -->
+    <navigator url='../list/list?type=coming_soon&title=即将上映' hover-class='none'>
+      <view class='board-item'>
+        <text>即将上映</text>
+        <image src='../../images/arrowright.png' mode='aspectFill'></image>
+      </view>
+    </navigator>
+    <!-- TOP250 -->
+    <navigator url='../list/list?type=top250&title=TOP250' hover-class='none'>
+      <view class='board-item'>
+        <text>TOP250</text>
+        <image src='../../images/arrowright.png' mode='aspectFill'></image>
+      </view>
+    </navigator>
+    <!-- 北美票房榜 -->
+    <navigator url='../list/list?type=us_box&title=北美票房榜' hover-class='none'>
+      <view class='board-item'>
+        <text>北美票房榜</text>
+        <image src='../../images/arrowright.png' mode='aspectFill'></image>
+      </view>
+    </navigator>
+  </view>
+</view>

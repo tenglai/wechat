@@ -1,0 +1,51 @@
+<!--pages/list/list.wxml-->
+<!--列表页-->
+<view class='container'>
+  <!--等待框-->
+  <loading hidden="{{!loading}}">加载中...</loading>
+  <!--顶部标题栏-->
+  <view class='page-header'>
+    <text class='page-title'>{{title}}</text>
+  </view>
+  <!--列表-->
+  <view class='page-body' wx:for="{{list}}" wx:key="id">
+    <!--类型判断,显示不同的数据-->
+    <block wx:if="{{type === 'us_box'}}">
+      <navigator url='../item/item?id={{item.subject.id}}'>
+        <view class='item'>
+          <image class='poster' src='{{item.subject.images.small}}'></image>
+          <view class='meta'>
+            <text class='title'>{{item.subject.title}}</text>
+            <text class='sub-title'>{{item.subject.original_title}}({{item.subject.year}})</text>
+            <view class='artists'>
+              <text>导演：</text>
+              <text wx:for="{{item.subject.directors}}" wx:key="id">{{item.name}}</text>
+            </view>
+            <view class='rating'>
+              <text>{{item.subject.rating.average}}</text>
+            </view>
+          </view>
+        </view>
+      </navigator>
+    </block>
+    <!--另一种情况-->
+    <block wx:else>
+      <navigator url='../item/item?id={{ item.id }}'>
+        <view class='item'>
+          <image class='poster' src='{{item.images.small}}'></image>
+          <view class='meta'>
+            <text class='title'>{{item.title}}</text>
+            <text class='sub-title'>{{item.original_title}}({{item.year}})</text>
+            <view class='artists'>
+             <text>导演：</text>
+             <text wx:for="{{item.directors}}" wx:key="id">{{item.name}}</text>
+            </view>
+            <view class='rating'>
+              <text>{{item.rating.average}}</text>
+            </view>
+          </view>
+        </view>
+      </navigator>
+    </block>
+  </view>
+</view>

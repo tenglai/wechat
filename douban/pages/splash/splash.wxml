@@ -1,0 +1,12 @@
+<!--pages/splash/splash.wxml-->
+<!-- 轮播图 -->
+<swiper indicator-dots='true' autoplay='true' interval='5000' duration='1000'>
+  <block wx:for="{{movies}}" wx:for-index="index" wx:key="id">
+    <swiper-item>
+      <!-- 轮播图片 -->
+      <image src='{{item.images.large}}' class='slide-image' mode='aspectFill' />
+      <!-- 滑动到最后一张图,显示按钮 -->
+      <button class='btn' bindtap='start' wx:if="{{index == movies.length -1}}">立即体验</button>
+    </swiper-item>
+  </block>
+</swiper>
