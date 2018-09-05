@@ -1,0 +1,73 @@
+/**index.wxss**/
+/**自定义轮播图 start**/
+.swiper-container{ 
+  position: relative; 
+} 
+.swiper-container .swiper{ 
+  height: 400rpx; 
+} 
+.swiper-container .swiper .img{ 
+  width: 100%; 
+  height: 100%; 
+} 
+.swiper-container .dots{ 
+  position: absolute; 
+  right: 40rpx; 
+  bottom: 20rpx; 
+  display: flex; 
+  justify-content: center; 
+} 
+.swiper-container .dots .dot{ 
+  margin: 0 10rpx; 
+  width: 28rpx; 
+  height: 28rpx; 
+  background: #fff; 
+  border-radius: 50%; 
+  transition: all .6s; 
+  font: 300 18rpx/28rpx "microsoft yahei"; 
+  text-align: center; 
+} 
+.swiper-container .dots .dot.active{ 
+  background: #f80; 
+  color:#fff; 
+}
+/**自定义轮播图 end**/
+/**分类入口 start**/
+.menu-wrp {  
+  width:100%;
+  margin-top:20rpx;  
+}  
+.menu-wrp:after{  
+  content:"";  
+  display:block;  
+  clear:both;  
+}  
+  
+.menu-list{  
+  float:left;  
+  width:20%;  
+  box-sizing: border-box;  
+  padding-bottom:10px;  
+}  
+  
+.menu-img{  
+  width:120rpx;    
+  height:84rpx;  
+  display:block;  
+  margin:0 auto;  
+  margin-bottom:5px;  
+}  
+.menu-desc{  
+  background-color:#ffffff;  
+  color:#333333;  
+  width:100%;  
+  text-align: center;  
+  display:block;  
+  font-size:12px;
+}  
+.gap-1,.gap-2{  
+  width:100%;  
+  height:10rpx;  
+  background:rgb(238, 238, 238);
+}
+/**分类入口 end**/

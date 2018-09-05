@@ -1,8 +1,0 @@
-<!--pages/home/home.wxml-->
-<view class=''>
-  <swiper></swiper>
-
-  <view class=''>
-    {{aaa}}
-  </view>
-</view>

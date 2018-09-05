@@ -1,11 +1,54 @@
 {
   "pages": [
-    "pages/home/home"
+    "pages/index/index",
+    "pages/audiobook/audiobook",
+    "pages/broadcast/broadcast",
+    "pages/group/group",
+    "pages/mine/mine",
+    "component/modal/modal",
+    "component/stepper/stepper"
   ],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "WeChat",
     "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#949494",
+    "selectedColor": "#42bd56",
+    "borderStyle": "black",
+    "list": [
+      {
+        "selectedIconPath": "assets/images/ic_tab_home_active.png",
+        "iconPath": "assets/images/ic_tab_home_normal.png",
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "selectedIconPath": "assets/images/ic_tab_subject_active.png",
+        "iconPath": "assets/images/ic_tab_subject_normal.png",
+        "pagePath": "pages/audiobook/audiobook",
+        "text": "书影音"
+      },
+      {
+        "selectedIconPath": "assets/images/ic_tab_status_active.png",
+        "iconPath": "assets/images/ic_tab_status_normal.png",
+        "pagePath": "pages/broadcast/broadcast",
+        "text": "广播"
+      },
+      {
+        "selectedIconPath": "assets/images/ic_tab_group_active.png",
+        "iconPath": "assets/images/ic_tab_group_normal.png",
+        "pagePath": "pages/group/group",
+        "text": "小组"
+      },
+      {
+        "selectedIconPath": "assets/images/ic_tab_profile_active.png",
+        "iconPath": "assets/images/ic_tab_profile_normal.png",
+        "pagePath": "pages/mine/mine",
+        "text": "我的"
+      }
+    ]
   }
 }
