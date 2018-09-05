@@ -36,7 +36,7 @@ Page({
     },
     /*自定义轮播图 配置*/
     slider: [
-      { id: '0', linkUrl: 'pages/index/index', picUrl: 'http://img02.tooopen.com/images/20150928/tooopen_sy_143912755726.jpg' },
+      { id: '0', linkUrl: 'pages/index/index', picUrl: 'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1536065455220&di=3280e9f1d7f3090313a944950f5a4184&imgtype=0&src=http%3A%2F%2Fpic.qiantucdn.com%2F58pic%2F17%2F86%2F17%2F559f42e68d5f0_1024.jpg' },
       { id: '0', linkUrl: 'pages/index/index', picUrl: 'http://img06.tooopen.com/images/20160818/tooopen_sy_175866434296.jpg' },
       { id: '0', linkUrl: 'pages/index/index', picUrl: 'http://img06.tooopen.com/images/20160818/tooopen_sy_175833047715.jpg' }
     ],
