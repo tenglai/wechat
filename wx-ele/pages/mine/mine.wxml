@@ -1,29 +1,31 @@
 <!--pages/mine/mine.wxml-->
-<!--主盒子-->
-<view class="container">
-  <!--左侧栏-->
-  <view class="nav_left">
-    <block wx:for="{{cateItems}}" wx:key="id">
-      <!--当前项的id等于item项的id，那个就是当前状态-->
-      <!--用data-index记录这个数据在数组的下标位置，使用data-id设置每个item的id值，供打开2级页面使用-->
-      <view class="nav_left_items {{curNav == item.cate_id ? 'active' : ''}}" bindtap="switchRightTab" data-index="{{index}}" data-id="{{item.cate_id}}">{{item.cate_name}}</view>
-    </block>
+<view class="mine-wrapper">
+  <view class="avatar-wrapper">
+    <view>
+      <view class="avatar">
+        <image style="border-radius:50%;" src="{{userinfo.avatarUrl ? userinfo.avatarUrl:'../../images/avatar/avatar_01.png'}}"></image>
+      </view>
+      <view class="text">
+        <text wx:if="{{userinfo.nickName}}">{{userinfo.nickName}}</text>
+        <text wx:else bindtap="toLogin">注册 / 登录</text>
+      </view>
+      <view class="text">
+        <text wx:if="{{userSign==2}}">{{"您还没有填写真实信息，暂不能借书"}}</text>
+        <text wx:elif="{{userSign==1}}">{{"会员用户"}}</text>
+      </view>
+    </view>
   </view>
-  <!--右侧栏-->
-  <view class="nav_right">
-    <!--如果有数据，才遍历项-->
-    <view wx:if="{{cateItems[curIndex].ishaveChild}}">
-      <block wx:for="{{cateItems[curIndex].children}}" wx:key="id">
-        <view class="nav_right_items">
-        <!--界面跳转 -->
-          <navigator url="../../detail/detail}}">
-            <image src="{{item.image}}"></image>
-            <text>{{item.name}}</text>
-          </navigator>
-        </view>
+  <view class="list-wrapper">
+    <view class="weui-cells weui-cells_after-title">
+      <block wx:for="{{menuitems}}" wx:key="menu_for">
+        <navigator url="{{item.url}}" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+          <view class="weui-cell__hd">
+            <image src="{{item.icon}}"></image>
+          </view>
+          <view class="weui-cell__bd">{{item.text}}</view>
+          <view class="weui-cell__ft weui-cell__ft_in-access">{{item.tips}}</view>
+        </navigator>
       </block>
     </view>
-    <!--如果无数据，则显示数据-->
-    <view class="nodata_text" wx:else>该分类暂无数据</view>
   </view>
 </view>

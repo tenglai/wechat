@@ -10,35 +10,35 @@ Page({
   data: {
     menu: {
       imgUrls: [
-        'http://gw.alicdn.com/tps/i2/TB19BluIVXXXXX6XpXXN4ls0XXX-183-129.png?imgtag=avatar',
-        'http://gw.alicdn.com/tps/TB1FDOHLVXXXXcZXFXXXXXXXXXX-183-129.png?imgtag=avatar',
-        'http://gw.alicdn.com/tps/TB1PlmNLVXXXXXEXFXXXXXXXXXX-183-129.png?imgtag=avatar',
-        'http://gw.alicdn.com/tps/TB1RN0HMFXXXXXNXpXXXXXXXXXX-183-129.png?imgtag=avatar',
-        'http://gw.alicdn.com/tps/TB1exaOLVXXXXXeXFXXXXXXXXXX-183-129.png?imgtag=avatar',
-        'http://img.alicdn.com/tps/TB1GzMJLXXXXXXoXXXXXXXXXXXX-183-129.png',
-        'http://gw.alicdn.com/tps/i3/TB1Ewu2KVXXXXXkapXXN4ls0XXX-183-129.png',
-        'http://gw.alicdn.com/tps/TB1cniBJpXXXXataXXXXXXXXXXX-183-129.png?imgtag=avatar',
-        'http://img.alicdn.com/tps/TB1caopLVXXXXaDaXXXXXXXXXXX-183-129.png',
-        'http://gw.alicdn.com/tps/i1/TB1c1FMIpXXXXawXpXXN4ls0XXX-183-129.png?imgtag=avatar'
+        'https://cdn-img.easyicon.net/png/5053/505312.gif',
+        'https://cdn-img.easyicon.net/png/11599/1159919.gif',
+        'https://cdn-img.easyicon.net/png/5479/547983.gif',
+        'https://cdn-img.easyicon.net/png/49/4922.gif',
+        'https://cdn-img.easyicon.net/png/11598/1159837.gif',
+        'https://cdn-img.easyicon.net/png/5483/548303.gif',
+        'https://cdn-img.easyicon.net/png/407/40721.gif',
+        'https://cdn-img.easyicon.net/png/316/31651.gif',
+        'https://cdn-img.easyicon.net/png/11672/1167231.gif',
+        'https://cdn-img.easyicon.net/png/10775/1077575.gif'
       ],
       descs: [
-        '聚划算',
-        '天猫',
-        '天猫国际',
-        '外卖',
-        '天猫超市',
-        '充值中心',
-        '阿里旅行',
-        '领金币',
-        '到家',
-        '分类'
+        '总站首页',
+        '总站概况',
+        '要闻',
+        '工作动态',
+        '公告栏',
+        '政策法规',
+        '通关指南',
+        '服务系统',
+        '业务咨询',
+        '网站管理'
       ]
     },
     /*自定义轮播图 配置*/
     slider: [
-      { id: '0', linkUrl: 'pages/index/index', picUrl: 'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1536065455220&di=3280e9f1d7f3090313a944950f5a4184&imgtype=0&src=http%3A%2F%2Fpic.qiantucdn.com%2F58pic%2F17%2F86%2F17%2F559f42e68d5f0_1024.jpg' },
-      { id: '0', linkUrl: 'pages/index/index', picUrl: 'http://img06.tooopen.com/images/20160818/tooopen_sy_175866434296.jpg' },
-      { id: '0', linkUrl: 'pages/index/index', picUrl: 'http://img06.tooopen.com/images/20160818/tooopen_sy_175833047715.jpg' }
+      { id: '0', linkUrl: 'pages/index/index', picUrl: 'http://www.szbj.gov.cn/ueditorupload/image/20180904/61491536023452489.jpg' },
+      { id: '0', linkUrl: 'pages/index/index', picUrl: 'http://www.szbj.gov.cn/ueditorupload/image/20180820/72361534728079228.JPG' },
+      { id: '0', linkUrl: 'pages/index/index', picUrl: 'http://www.szbj.gov.cn/ueditorupload/image/20180809/83321533814934509.jpg' }
     ],
     swiperCurrent: 0,
     /*模态框*/

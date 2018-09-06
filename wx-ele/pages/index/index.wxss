@@ -47,11 +47,12 @@
   float:left;  
   width:20%;  
   box-sizing: border-box;  
-  padding-bottom:10px;  
+  padding-bottom:10px;
+  padding-top: 10px;
 }  
   
 .menu-img{  
-  width:120rpx;    
+  width:84rpx;    
   height:84rpx;  
   display:block;  
   margin:0 auto;  
