@@ -2,3 +2,7 @@ dist/
 .temp/
 .rn_temp/
 node_modules/
+.DS_Store
+project.config.json
+.vscode/
+.idea/
