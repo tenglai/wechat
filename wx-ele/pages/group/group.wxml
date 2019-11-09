@@ -7,10 +7,10 @@
     <view class="more">更多</view>  
   </view>  
   <!--list-->  
-  <view class="goodslist">  
+  <view class="goodslist">
     <!--item-->  
     <block wx:for="{{goodslist}}" wx:key="id">  
-      <view class="goods">
+      <view class="goods" bindtap='goGroupDetail'>
         <!--上--文字说明-->  
         <view class="good-name">  
           <text>{{item.name}}</text>  

@@ -80,7 +80,7 @@ page{
   flex: 1;  
   /*宽度75%，高度占满，并使用百分比布局*/  
   width: 75%;  
-  height: 120%;  
+  /* height: 120%;   */
   padding: 10px;  
   box-sizing: border-box;  
   background: #fff;  

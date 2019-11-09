@@ -1,31 +1,67 @@
 <!--pages/mine/mine.wxml-->
-<view class="mine-wrapper">
-  <view class="avatar-wrapper">
-    <view>
-      <view class="avatar">
-        <image style="border-radius:50%;" src="{{userinfo.avatarUrl ? userinfo.avatarUrl:'../../images/avatar/avatar_01.png'}}"></image>
-      </view>
-      <view class="text">
-        <text wx:if="{{userinfo.nickName}}">{{userinfo.nickName}}</text>
-        <text wx:else bindtap="toLogin">注册 / 登录</text>
-      </view>
-      <view class="text">
-        <text wx:if="{{userSign==2}}">{{"您还没有填写真实信息，暂不能借书"}}</text>
-        <text wx:elif="{{userSign==1}}">{{"会员用户"}}</text>
+<view class="container">
+  <view class="profile-info">
+    <view v-if="userInfo.avatar">
+      <image class="avatar" src="{{userInfo.avatar}}"/>
+      <view class="info">
+        <text class="name">{{userInfo.nickname}}</text>
       </view>
     </view>
+    <!-- <view v-else class="goLogin">
+      <img class="icon" src="/static/images/ic_menu_me_pressed.png"/>
+      <button v-if="canIUse" open-type="getUserInfo" class="goLoginBtn" >点击，授权登录~</button>
+    </view> -->
   </view>
-  <view class="list-wrapper">
-    <view class="weui-cells weui-cells_after-title">
-      <block wx:for="{{menuitems}}" wx:key="menu_for">
-        <navigator url="{{item.url}}" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
-          <view class="weui-cell__hd">
-            <image src="{{item.icon}}"></image>
-          </view>
-          <view class="weui-cell__bd">{{item.text}}</view>
-          <view class="weui-cell__ft weui-cell__ft_in-access">{{item.tips}}</view>
-        </navigator>
-      </block>
+
+  <view class="user-menu">
+    <view class="item">
+      <navigator url="./information/information" class="a">
+        <text class="icon order"></text>
+        <text class="txt">我的信息</text>
+      </navigator>
+    </view>
+    <view class="item">
+      <navigator url="./information/information" class="a">
+        <text class="icon coupon"></text>
+        <text class="txt">钱包</text>
+      </navigator>
+    </view>
+    <view class="item no-border">
+      <view class="a">
+        <text class="icon gift"></text>
+        <text class="txt">记录</text>
+      </view>
+    </view>
+    <view class="item">
+      <navigator url="./information/information" class="a">
+        <text class="icon address"></text>
+        <text class="txt">地址管理</text>
+      </navigator>
+    </view>
+    <view class="item">
+      <view class="a">
+        <text class="icon security"></text>
+        <text class="txt">账号安全</text>
+      </view>
+    </view>
+    <view class="item no-border">
+      <view class="a">
+        <text class="icon kefu"></text>
+        <text class="txt">联系客服</text>
+      </view>
+    </view>
+    <view class="item item-bottom">
+      <view class="a">
+        <text class="icon help"></text>
+        <text class="txt">帮助中心</text>
+      </view>
+    </view>
+    <view class="item item-bottom">
+      <navigator url="./information/information" class="a">
+        <text class="icon feedback"></text>
+        <text class="txt">意见反馈</text>
+      </navigator>
     </view>
   </view>
+  <view v-if="userInfo.avatar" class="logout" bindtap='exit'>退出登录</view>
 </view>

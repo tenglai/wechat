@@ -1,0 +1,16 @@
+/* pages/group/groupDetail/groupDetail.wxss */
+.container {  
+  padding: 0rpx 15rpx;
+  font-family: Microsoft YaHei;
+}
+.title {
+  text-align: center;
+}
+.time {
+  text-align: center;
+  margin: 10rpx 0;
+  font-weight: normal;
+}
+.content {
+  text-indent: 1em;
+}

@@ -59,5 +59,6 @@ page{
   flex-direction: row;  
   justify-content: space-between;   */
   color:#e4393c;  
-  font-weight: 600;  
+  font-weight: 600;
+  font-family: Microsoft YaHei;
 } 

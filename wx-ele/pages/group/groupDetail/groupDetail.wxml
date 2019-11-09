@@ -1,0 +1,14 @@
+<!--pages/group/groupDetail/groupDetail.wxml-->
+<!--主盒子-->  
+<view class="container">  
+  <!--head-->  
+  <view class="title">  
+    <text>{{title}}</text>
+  </view>
+  <view class="time">
+    <text>{{time}}</text>
+  </view>
+  <view class="content">
+    <text>{{content}}</text>
+  </view> 
+</view>

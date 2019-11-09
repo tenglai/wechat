@@ -10,16 +10,32 @@ Page({
     navLeftItems: [],
     navRightItems: [],
     curNav: 1,
-    curIndex: 0
+    curIndex: 0,
+    _WIDTH_: '',
+    _HEIGHT_: ''
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function () {
-    this.setData({
+    let _this = this;
+
+    _this.setData({
       navLeftItems: data_.getSData(),
       navRightItems: data_.getSData()
+    })
+
+    wx.getSystemInfo({
+      success: function (res) {
+        // console.log(res.windowWidth);
+        // console.log(res.windowHeight);
+
+        _this.setData({
+          _WIDTH_: res.windowWidth,
+          _HEIGHT_: res.windowHeight
+        })
+      }
     })
   },
 

@@ -38,7 +38,7 @@ Page({
     slider: [
       { id: '0', linkUrl: 'pages/index/index', picUrl: 'http://www.szbj.gov.cn/ueditorupload/image/20180904/61491536023452489.jpg' },
       { id: '0', linkUrl: 'pages/index/index', picUrl: 'http://www.szbj.gov.cn/ueditorupload/image/20180820/72361534728079228.JPG' },
-      { id: '0', linkUrl: 'pages/index/index', picUrl: 'http://www.szbj.gov.cn/ueditorupload/image/20180809/83321533814934509.jpg' }
+      { id: '0', linkUrl: 'pages/index/index', picUrl: 'http://www.szbj.gov.cn/ueditorupload/image/20180906/3591536198195804.JPG' }
     ],
     swiperCurrent: 0,
     /*模态框*/
