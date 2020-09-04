@@ -58,6 +58,6 @@
     "eslint-plugin-import": "^2.12.0",
     "eslint-plugin-react": "^7.8.2",
     "eslint-plugin-taro": "1.2.7",
-    "node-sass": "^4.11.0"
+    "node-sass": "^4.13.1"
   }
 }
